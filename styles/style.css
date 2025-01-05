@@ -118,7 +118,7 @@ a:hover {
   display: flex; /* Utilisation de flexbox pour aligner l'image à gauche et le texte à droite */
   justify-content: space-between; /* Créer de l'espace entre l'image et le texte */
   align-items: center; /* Centrer l'image et le texte verticalement */
-  gap: 80px; /* Augmenter l'espacement entre l'image et le texte */
+  gap: 120px; /* Augmenter l'espacement entre l'image et le texte */
   max-width: 1200px; /* Limite la largeur du contenu pour une meilleure présentation */
   margin: 0 auto; /* Centre le conteneur */
 }
@@ -143,7 +143,7 @@ a:hover {
   display: flex; /* Utilisation de flexbox pour aligner l'image à droite et le texte à gauche */
   justify-content: space-between; /* Créer de l'espace entre le texte et l'image */
   align-items: center; /* Centrer le texte et l'image verticalement */
-  gap: 80px; /* Espacement entre le texte et l'image */
+  gap: 30px; /* Espacement entre le texte et l'image */
   max-width: 1200px; /* Limite la largeur du contenu */
   margin: 0 auto; /* Centrer le contenu */
 }
