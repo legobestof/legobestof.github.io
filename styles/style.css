@@ -118,7 +118,7 @@ a:hover {
   display: flex; /* Utilisation de flexbox pour aligner l'image à gauche et le texte à droite */
   justify-content: space-between; /* Créer de l'espace entre l'image et le texte */
   align-items: center; /* Centrer l'image et le texte verticalement */
-  gap: 20px; /* Espacement entre l'image et le texte */
+  gap: 30px; /* Augmenter l'espacement entre l'image et le texte */
   max-width: 1200px; /* Limite la largeur du contenu pour une meilleure présentation */
   margin: 0 auto; /* Centre le conteneur */
 }
@@ -131,7 +131,9 @@ a:hover {
 
 /* Style de l'image dans la section "À propos" */
 .nathan-img {
-  width: 300px; /* Largeur de l'image */
-  height: auto;
+  width: 350px; /* Augmenter la largeur de l'image */
+  height: 350px; /* Assurer que la hauteur soit égale à la largeur */
+  border-radius: 50%; /* Bordure ronde */
+  object-fit: cover; /* L'image s'adapte à la forme circulaire sans déformation */
   box-shadow: 0 0 15px 20px #6a0dad; /* Ombre violette autour de l'image */
 }
