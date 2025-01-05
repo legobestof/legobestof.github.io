@@ -34,65 +34,87 @@
     <p>Étudiant en deuxième année de BUT Informatique à l'IUT de Lens</p>
 
     <section id="about">
-      <div class="about-content">
-        <img src="styles/nathan.png" alt="nathan" class="nathan-img" />
-        <div class="about-text">
-          <h2>À propos</h2>
-          <p>
-            Je m'appelle Nathan Pierreuse et je suis un étudiant passionné par
-            la programmation et les nouvelles technologies. Mon objectif est de
-            développer des solutions innovantes et efficaces en utilisant ce que
-            j'apprends au cours de mon parcours scolaire et de mes recherches
-            personnelles.
-          </p>
-          <p>
-            Vous pouvez télécharger mon CV en format PDF en cliquant sur le lien
-            ci-dessous :
-          </p>
-          <a
-            href="documents/Curriculumvitaepublic.pdf"
-            download="Curriculumvitaepublic.pdf"
-            class="download-link"
-            >Télécharger mon CV en cliquant ici</a
-          >
-          <p>En anglais :</p>
-          <a
-            href="documents/Curriculumvitaeanglaispublic.pdf"
-            download="Curriculumvitaeanglaispublic.pdf"
-            class="download-link"
-            >Télécharger mon CV en anglais en cliquant ici</a
-          >
+      <div class="section-container">
+        <div class="about-content">
+          <img src="styles/nathan.png" alt="nathan" class="nathan-img" />
+          <div class="about-text">
+            <h2>À propos</h2>
+            <p>
+              Je m'appelle Nathan Pierreuse et je suis un étudiant passionné par
+              la programmation et les nouvelles technologies. Mon objectif est
+              de développer des solutions innovantes et efficaces en utilisant
+              ce que j'apprends au cours de mon parcours scolaire et de mes
+              recherches personnelles.
+            </p>
+            <p>
+              Vous pouvez télécharger mon CV en format PDF en cliquant sur le
+              lien ci-dessous :
+            </p>
+            <a
+              href="documents/Curriculumvitaepublic.pdf"
+              download="Curriculumvitaepublic.pdf"
+              class="download-link"
+              >Télécharger mon CV en cliquant ici</a
+            >
+            <p>En anglais :</p>
+            <a
+              href="documents/Curriculumvitaeanglaispublic.pdf"
+              download="Curriculumvitaeanglaispublic.pdf"
+              class="download-link"
+              >Télécharger mon CV en anglais en cliquant ici</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <section id="skills">
-      <div class="skills-content">
-        <div class="skills-text">
-          <h2>Compétences</h2>
-          <p>
-            Voici un aperçu de mes compétences acquises au cours de mon parcours
-            :
-          </p>
-          <ul>
-            <li>Développement web : HTML, CSS, PHP, Laravel</li>
-            <li>Programmation : Python, Java</li>
-            <li>Base de données : SQL, MySQL, PL/pgSQL</li>
-            <li>Outils : Git, Suite Office, JetBrains, Eclipse</li>
-          </ul>
+      <div class="section-container">
+        <div class="skills-content">
+          <div class="skills-text">
+            <h2>Compétences</h2>
+            <p>
+              Voici un aperçu de mes compétences acquises au cours de mon
+              parcours :
+            </p>
+            <ul>
+              <li>Développement web : HTML, CSS, PHP, Laravel</li>
+              <li>Programmation : Python, Java</li>
+              <li>Base de données : SQL, MySQL, PL/pgSQL</li>
+              <li>Outils : Git, Suite Office, JetBrains, Eclipse</li>
+            </ul>
+          </div>
+          <img src="styles/skills.png" alt="skills img" class="skills-img" />
         </div>
-        <img src="styles/skills.png" alt="skills img" class="skills-img" />
       </div>
     </section>
 
     <section id="projects">
       <h2>Projets</h2>
-      <p>Voici quelques projets sur lesquels j'ai travaillé :</p>
-      <ul>
-        <li>Projet 1 - Description courte</li>
-        <li>Projet 2 - Description courte</li>
-        <li>Projet 3 - Description courte</li>
-      </ul>
+      <div class="projects-container">
+        <div class="project-box" onclick="openPopup('project1')">
+          <p>Marathon</p>
+        </div>
+        <div class="project-box" onclick="openPopup('project2')">
+          <p>LensJudge</p>
+        </div>
+        <div class="project-box" onclick="openPopup('project3')">
+          <p>Bomberman</p>
+        </div>
+        <div class="project-box" onclick="openPopup('project4')">
+          <p>juste prix amazon</p>
+        </div>
+      </div>
+
+      <!-- Pop-up pour afficher les détails du projet -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h3 id="popup-title">Titre du projet</h3>
+          <p id="popup-description">Description du projet...</p>
+          <a href="#" id="popup-link" target="_blank">Voir sur GitHub</a>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
