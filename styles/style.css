@@ -114,11 +114,5 @@ a:hover {
 }
 
 .nathan-img {
-  border-radius: 8px; /* Optionnel pour arrondir les coins de l'image */
-  background: radial-gradient(
-    circle,
-    rgba(106, 13, 173, 0.6),
-    rgba(106, 13, 173, 0) 70%
-  );
-  padding: 10px; /* Optionnel, pour espacer l'image de la bordure */
+  box-shadow: 0 0 15px 20px #6a0dad; /* Ombre estompée en violet */
 }
