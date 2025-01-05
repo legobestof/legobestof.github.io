@@ -189,20 +189,17 @@ a:hover {
 
 /* Menu déroulant caché par défaut */
 .language-menu {
-  position: relative;
-  margin-left: auto; /* Pousse le menu à l'extrême droite */
-}
-
-.language-menu span {
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.language-menu span:hover {
-  color: #4b0082; /* Violet sombre au survol */
+  display: none; /* Caché par défaut */
+  position: absolute;
+  right: 0; /* Aligné à droite */
+  top: 120%; /* En dessous du bouton */
+  background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+  padding: 0.5rem 1rem;
+  border: 1px solid black; /* Bordure noire */
+  border-radius: 5px; /* Coins arrondis */
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
 }
 
 .language-menu ul {
@@ -242,7 +239,7 @@ a:hover {
 
 /* Chaque élément du menu */
 .language-menu li {
-  border-bottom: 1px solid #6a0dad; /* Séparateur entre les éléments */
+  margin: 0.5rem 0;
 }
 
 .language-menu li:last-child {
@@ -253,17 +250,17 @@ a:hover {
 .language-menu li a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
   display: block;
-  padding: 0.5rem 1rem;
   transition: background-color 0.3s;
 }
 
 .language-menu li a:hover {
-  background-color: #6a0dad; /* Mauve au survol */
+  background-color: #4b0082; /* Violet sombre au survol */
+  border-radius: 3px;
 }
 
 /* Afficher le menu au survol ou clic */
-.language-selector:hover .language-menu,
-.language-selector:focus-within .language-menu {
+.language-selector:hover .language-menu {
   display: block;
 }
