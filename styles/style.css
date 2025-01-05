@@ -1,18 +1,21 @@
+/* Corps de la page */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #333;
+  color: white; /* Texte blanc */
+  background-color: black; /* Fond noir */
   padding-top: 70px; /* Compense la hauteur de l'en-tête fixe */
 }
 
+/* En-tête */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4caf50;
+  background-color: #6a0dad; /* Mauve */
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,7 @@ header h1 {
   color: white;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   margin: 0;
@@ -47,9 +51,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #d4d4d4;
+  color: #4b0082; /* Violet sombre au survol */
 }
 
+/* Sections */
 section {
   padding: 2rem;
   text-align: center;
@@ -62,10 +67,29 @@ section {
   margin: 0 auto;
 }
 
+section h2 {
+  color: #6a0dad; /* Mauve pour les titres des sections */
+}
+
+/* Footer */
 footer {
-  background: #333;
+  background: #4b0082; /* Violet sombre */
   color: white;
   text-align: center;
   padding: 1rem 0;
   position: relative;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Liens dans le contenu */
+a {
+  color: #6a0dad; /* Mauve */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4b0082; /* Violet sombre au survol */
 }
