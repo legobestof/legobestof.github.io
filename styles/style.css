@@ -112,3 +112,13 @@ a:hover {
 .social-icon:hover {
   opacity: 0.8; /* Effet d'opacité au survol */
 }
+
+.nathan-img {
+  border-radius: 8px; /* Optionnel pour arrondir les coins de l'image */
+  background: radial-gradient(
+    circle,
+    rgba(106, 13, 173, 0.6),
+    rgba(106, 13, 173, 0) 70%
+  );
+  padding: 10px; /* Optionnel, pour espacer l'image de la bordure */
+}
