@@ -18,7 +18,7 @@ header {
   background-color: rgba(106, 13, 173, 0.9); /* Mauve avec opacité */
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Espacement entre les éléments */
   align-items: center;
   padding: 1rem 2rem; /* Augmente l'espace interne */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
@@ -189,17 +189,55 @@ a:hover {
 
 /* Menu déroulant caché par défaut */
 .language-menu {
-  display: none; /* Caché initialement */
+  position: relative;
+  margin-left: auto; /* Pousse le menu à l'extrême droite */
+}
+
+.language-menu span {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.language-menu span:hover {
+  color: #4b0082; /* Violet sombre au survol */
+}
+
+.language-menu ul {
+  display: none; /* Menu caché par défaut */
   position: absolute;
-  top: 100%; /* Juste en dessous du bouton */
-  right: 0;
-  background-color: #4b0082; /* Violet sombre */
+  right: 0; /* Aligne le menu déroulant à droite */
+  top: 120%; /* Positionne le menu sous le texte "Langue" */
+  background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+  padding: 0.5rem 1rem;
+  border: 1px solid black; /* Bordure noire */
+  border-radius: 5px; /* Coins arrondis */
   list-style: none;
   margin: 0;
-  padding: 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 1000; /* Assure que le menu est devant */
+}
+
+.language-menu:hover ul {
+  display: block; /* Affiche le menu au survol */
+}
+
+.language-menu ul li {
+  margin: 0.5rem 0;
+}
+
+.language-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem; /* Taille des liens */
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.language-menu ul li a:hover {
+  background-color: #4b0082; /* Violet sombre au survol */
+  border-radius: 3px;
 }
 
 /* Chaque élément du menu */
