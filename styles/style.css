@@ -113,6 +113,25 @@ a:hover {
   opacity: 0.8; /* Effet d'opacité au survol */
 }
 
+/* Conteneur pour la section "À propos" */
+.about-content {
+  display: flex; /* Utilisation de flexbox pour aligner l'image à gauche et le texte à droite */
+  justify-content: space-between; /* Créer de l'espace entre l'image et le texte */
+  align-items: center; /* Centrer l'image et le texte verticalement */
+  gap: 20px; /* Espacement entre l'image et le texte */
+  max-width: 1200px; /* Limite la largeur du contenu pour une meilleure présentation */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+/* Texte dans la section "À propos" */
+.about-text {
+  flex: 1; /* Le texte prend tout l'espace restant */
+  text-align: left; /* Texte aligné à gauche */
+}
+
+/* Style de l'image dans la section "À propos" */
 .nathan-img {
-  box-shadow: 0 0 15px 20px #6a0dad; /* Ombre estompée en violet */
+  width: 300px; /* Largeur de l'image */
+  height: auto;
+  box-shadow: 0 0 15px 20px #6a0dad; /* Ombre violette autour de l'image */
 }
