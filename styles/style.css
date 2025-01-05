@@ -93,3 +93,22 @@ a {
 a:hover {
   color: #4b0082; /* Violet sombre au survol */
 }
+/* Conteneur pour les icônes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centrer les icônes */
+  gap: 20px; /* Espacement entre les icônes */
+  margin-bottom: 10px; /* Espacement entre les icônes et le texte */
+}
+
+/* Style pour les icônes sociales */
+.social-icon {
+  width: 50px; /* Taille des icônes */
+  height: auto;
+  transition: opacity 0.3s; /* Animation au survol */
+}
+
+/* Effet de survol */
+.social-icon:hover {
+  opacity: 0.8; /* Effet d'opacité au survol */
+}
