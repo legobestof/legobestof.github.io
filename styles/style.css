@@ -15,13 +15,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #6a0dad; /* Mauve */
+  background-color: rgba(106, 13, 173, 0.9); /* Mauve avec opacité */
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem; /* Augmente l'espace interne */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+  border-bottom: 2px solid black; /* Bordure noire subtile */
 }
 
 header h1 {
@@ -36,7 +37,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem; /* Augmente l'espacement entre les éléments */
 }
 
 nav ul li {
@@ -47,6 +48,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem; /* Augmente la taille du texte */
   transition: color 0.3s;
 }
 
@@ -161,4 +163,69 @@ a:hover {
   border-radius: 50%; /* Bordure ronde */
   object-fit: cover; /* Assure que l'image s'adapte au cadre circulaire sans déformation */
   box-shadow: 0 0 15px 20px #6a0dad; /* Ombre violette autour de l'image */
+}
+
+/* Conteneur du sélecteur de langue */
+.language-selector {
+  position: relative; /* Nécessaire pour positionner le menu par rapport au bouton */
+  display: inline-block;
+}
+
+/* Bouton du sélecteur de langue */
+.language-button {
+  background-color: #6a0dad; /* Couleur mauve */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-button:hover {
+  background-color: #4b0082; /* Violet sombre au survol */
+}
+
+/* Menu déroulant caché par défaut */
+.language-menu {
+  display: none; /* Caché initialement */
+  position: absolute;
+  top: 100%; /* Juste en dessous du bouton */
+  right: 0;
+  background-color: #4b0082; /* Violet sombre */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Chaque élément du menu */
+.language-menu li {
+  border-bottom: 1px solid #6a0dad; /* Séparateur entre les éléments */
+}
+
+.language-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Liens du menu */
+.language-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.language-menu li a:hover {
+  background-color: #6a0dad; /* Mauve au survol */
+}
+
+/* Afficher le menu au survol ou clic */
+.language-selector:hover .language-menu,
+.language-selector:focus-within .language-menu {
+  display: block;
 }
