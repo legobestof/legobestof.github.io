@@ -387,3 +387,11 @@ a:hover {
 .close-btn:hover {
   color: #ff4500; /* Change la couleur de la croix au survol */
 }
+
+.centre {
+  text-align: center; /* Centre le texte horizontalement */
+  display: flex; /* Active le flexbox pour le centrage vertical */
+  justify-content: center; /* Centre horizontalement avec flexbox */
+  align-items: center; /* Centre verticalement avec flexbox */
+  height: 100%; /* À ajuster selon le contexte */
+}
